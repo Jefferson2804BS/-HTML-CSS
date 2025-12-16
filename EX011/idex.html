@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou apenas almente e diminua e aumente o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMG/imagemp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="IMG/imagemm.png" type="image/png">
+        <img src="IMG/imagemg.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Carregamento de audio</h1>
+    <p>Vamos reproduzir audio em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/29-Palms-NationalSweetheart.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não é compativel com MP3. <a href="midia/29-Palms-NationalSweetheart.mp3">clique aqui</a> para fazer o download do arquivo</p>
+    </audio>
+
+    <h1>Vamos falar sobre videos</h1>
+    <p>Este video está pedado no meu proprio servidor</p>
+    <video width="560" controls autoplay loop>
+        <source src="video/videoteste.mp4" type="video/mp4">
+        seu navegador não tem compatibilidade com esse video
+    </video>
+
+    <h1>Videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=0lzPE0V6at37UzT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

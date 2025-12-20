@@ -1,0 +1,80 @@
+:root{
+    --cor0: #A9CAC6;
+    --cor1: #7FA09C;
+    --cor2: #A5F5EC;
+    --cor3: #4A7570;
+    --cor4: #234B46;
+    --cor5: #0F332F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor0)
+}
+header{
+    background-color: var(--cor4);
+    padding: 10px;
+     display: flex;
+    align-items: center; 
+}
+
+header .logo{
+    width: 70px;
+    height: 30px;
+    background-color: var(--cor5);
+    display: flex;
+    border-radius: 25% 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px; 
+    padding-left: 20px;
+    margin-bottom: -10px;
+    
+}
+
+header nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 25% 10% 0 0;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+}
+
+
+main .primeiro{
+    background-color: var(--cor1);
+    height: 300px;
+    max-width: 1200px;
+    min-width: 230px;
+    margin: 0 auto;
+    padding: 10px;
+     display: flex;
+}
+
+.primeiro h2{
+    font-size: 5em;
+    color: white;
+    display: flex;
+    margin: auto auto 10px 10px;
+}
+
+.primeiro p{
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    width: 300px;
+    text-align: justify;
+    margin-left: auto;
+    padding-right: 30px;
+}
